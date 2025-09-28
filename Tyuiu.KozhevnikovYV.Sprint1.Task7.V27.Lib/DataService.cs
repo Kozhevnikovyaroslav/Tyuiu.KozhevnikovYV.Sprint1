@@ -5,7 +5,7 @@
     {
         public double Calculate(double x, double y)
         {
-            double z = (((Math.Cos(x * x)) + (Math.Sin(y * y)) / Math.Sin(y) + 1) - (((x * y) - 12) / (15 + Math.Cos(x))));
+            double z = ((Math.Cos(Math.Pow(x, 2)) + Math.Sin(Math.Pow(y, 2))) / (Math.Sin(y) + 1)) - (((x * y) - 12) / (15 + Math.Cos(x)));
             double w = Math.Round(z, 3);
             return w;
         }
