@@ -8,9 +8,9 @@
         public void ValueExpression()
         {
             DataService ds = new DataService();
-            double x = 30;
-            double y = 60;
-            double wait = -116.061;
+            double x = 2;
+            double y = 4;
+            double wait = -3.597;
             double res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
 
